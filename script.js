@@ -61,11 +61,18 @@ function game() {
   }
 
   // Play 5 rounds of the game
-  playRound(playerChoice(), comp());
-  playRound(playerChoice(), comp());
-  playRound(playerChoice(), comp());
-  playRound(playerChoice(), comp());
-  playRound(playerChoice(), comp());
+  // playRound(playerChoice(), comp());
+  // playRound(playerChoice(), comp());
+  // playRound(playerChoice(), comp());
+  // playRound(playerChoice(), comp());
+  // playRound(playerChoice(), comp());
+
+  // trying to use the while loop
+  let i = 0;
+  while (i < 5) {
+    playRound(playerChoice(), comp());
+    i++;
+  }
 
   // Final scores output message
   console.log(`Final Scores--- You: ${playerScore} Computer: ${compScore}`);
